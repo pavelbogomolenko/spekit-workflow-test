@@ -1,6 +1,6 @@
 import os
 
-from flask import Flask
+from flask import Flask, jsonify
 
 app = Flask(__name__)
 
@@ -8,6 +8,11 @@ app = Flask(__name__)
 @app.route("/")
 def index():
     return "Hello, World!", 200
+
+
+@app.route("/health", methods=["GET"])
+def health():
+    return jsonify({"status": "ok"}), 200
 
 
 @app.errorhandler(404)
