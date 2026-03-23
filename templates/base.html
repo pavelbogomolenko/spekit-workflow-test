@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My App{% endblock %}</title>
+    <style>
+        nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            gap: 1rem;
+        }
+        nav a.active {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav aria-label="Main navigation">
+        <ul>
+            <li>
+                <a href="{{ url_for('index') }}"
+                   {% if request.endpoint == 'index' %}class="active" aria-current="page"{% endif %}>
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="{{ url_for('about') }}"
+                   {% if request.endpoint == 'about' %}class="active" aria-current="page"{% endif %}>
+                    About
+                </a>
+            </li>
+        </ul>
+    </nav>
+    {% block content %}{% endblock %}
+</body>
+</html>
