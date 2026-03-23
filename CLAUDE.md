@@ -1,8 +1,9 @@
 # speckit-agent-spekit-workflow-test-33ac8352 Development Guidelines
 
-Auto-generated from all feature plans. Last updated: 2026-03-16
+Auto-generated from all feature plans. Last updated: 2026-03-23
 
 ## Active Technologies
+- Python 3.8+ with Flask 2.x + Flask 2.x, Jinja2 (bundled with Flask) (004-add-health-check)
 
 - Python 3.8+ (001-python-hello-world)
 - Python 3.8+ + Flask 2.x (002-python-hello-webapp)
@@ -27,6 +28,7 @@ pytest tests/ && ruff check hello.py app.py tests/ && ruff format --check hello.
 Python: Follow standard conventions (PEP 8); enforced by ruff.
 
 ## Recent Changes
+- 004-add-health-check: Added Python 3.8+ with Flask 2.x + Flask 2.x, Jinja2 (bundled with Flask)
 
 - 002-python-hello-webapp: Added Python 3.8+ + Flask 2.x
 - 001-python-hello-world: Added Python 3.8+
