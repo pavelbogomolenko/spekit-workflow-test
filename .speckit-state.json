@@ -1,8 +1,8 @@
 {
   "run_id": "speckit-agent-spekit-workflow-test-23be05de",
-  "phase": "specify",
+  "phase": "plan",
   "started_at": "2026-03-23T18:25:26.794653+00:00",
-  "session_id": "fa4d85fe-4439-4167-bbda-496ed2d7c744",
+  "session_id": "0d59dbae-982b-4c43-a9a6-5538610fb446",
   "status": "in_progress",
   "error": null
 }
